@@ -25,6 +25,9 @@ The project is structured as follows:
 - **data.csv**: CSV file containing the Breast Cancer Wisconsin dataset.
 - **Clustering_Cancer_Detection.ipynb**: Jupyter Notebook containing the code for the clustering model.
 - **model1.pkl**: Pickle file storing the trained K-Means clustering model.
+- **main.py**: The FastAPI code for using the clustering model in webpages.
+- **/templates/**: Directory for the webpage HTML files.
+- **/static/**: Directory for the static files like images and css files for the webpages.
 
 ## Usage
 
