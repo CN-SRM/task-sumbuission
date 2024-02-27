@@ -44,6 +44,8 @@ The project is structured as follows:
 
 4. If needed, use the saved K-Means model (`model1.pkl`) for predictions in your application.
 
+5. You can also run the FastAPI for this model using the Python File `main.py` which is connected to the webpages in the `/templates/` directory.
+
 ## Results
 
 The project includes visualizations of the data, the Elbow Method for determining the optimal number of clusters (K), and scatter plots illustrating the K-Means clustering results. Additionally, a crosstabulation is provided to compare the clustering results with the original diagnosis labels.
