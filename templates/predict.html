@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detection</title>
+    <style>
+        body{
+            background-image: url("../static/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="color: rgb(61, 0, 41); font-family: 'Franklin Gothic Light'; font-size: 50px;">Breast Cancer Detection</h1>
+        <form style="color: rgb(61, 0, 41); margin: 0 auto; font-family: 'Franklin Gothic Light'; font-size: 25px;" action="/predict" method="post">
+            <label for="heading">Mean Radius:</label>
+            <input type="number" id="radius" name="radius" placeholder="Mean Radius" step="0.01" style="font-family: 'Franklin Gothic Light'; font-size: 25px;" value={{radius}}><br><br>
+            <label for="summary" style="display: inline-block; margin-right: 7px;">Mean Texture:</label>
+            <input type="number" id="texture" name="texture" placeholder="Mean Texture" step="0.01" style="font-family: 'Franklin Gothic Light'; font-size: 25px;" value={{texture}}><br><br>
+            <label for="result" style="font-family: 'Franklin Gothic Heavy'; font-size: 40px;">Prediction: {{prediction}}</label>
+        </form>
+    </center>
+</body>
+</html>
